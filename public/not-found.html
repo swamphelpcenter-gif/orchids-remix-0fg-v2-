@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Not Found</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            alignItems: center;
+            min-height: 100vh;
+            background: linear-gradient(180deg, #eef5ff 0%, #ffffff 100%);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            align-items: center;
+        }
+
+        .container {
+            padding: 20px;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        .logo {
+            width: 150px;
+            height: auto;
+            margin-bottom: 40px;
+            display: inline-block;
+        }
+
+        .error-code {
+            font-size: 5rem;
+            font-weight: 800;
+            color: #f59e0b;
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+
+        .error-title {
+            color: #f59e0b;
+            font-weight: 700;
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+        }
+
+        .message-box {
+            background: #ffffff;
+            padding: 30px 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            margin-bottom: 25px;
+        }
+
+        .message-text {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #444;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: opacity 0.2s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(to right, #4361EE, #1D92F1);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: #f1f5f9;
+            color: #475569;
+        }
+
+        .support-text {
+            font-size: 0.8rem;
+            color: #99abb4;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://visora-dev-assets-id.assetsvsiddev.workers.dev/small-favicon/favicon-small.png" alt="Logo" class="logo">
+        
+        <div class="error-code">404</div>
+        <div class="error-title">Not Found</div>
+
+        <div class="message-box">
+            <p class="message-text">Resource yang diminta tidak ditemukan.</p>
+        </div>
+
+        <div class="button-group">
+            <a href="/" class="btn btn-primary">Kembali ke Beranda</a>
+            <a href="/dashboard" class="btn btn-secondary">Dashboard</a>
+        </div>
+
+        <p class="support-text">Jika masalah berlanjut, hubungi tim support kami</p>
+    </div>
+</body>
+</html>
