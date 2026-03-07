@@ -1758,6 +1758,11 @@ export default function DocsPage() {
                                       <div data-i18n="Shortlink">Shortlink</div>
                                   </a>
                               </li>
+                              <li className="menu-item">
+                                  <a href="/api/tools/subdomains?domain=example.com" target="_blank" className="menu-link">
+                                      <div data-i18n="Subdomain Checker">Subdomain Checker</div>
+                                  </a>
+                              </li>
                             </ul>
 
               </li>
