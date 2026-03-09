@@ -1,17 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { incrementStat, logApiRequest } from "@/lib/supabase";
 import { prettyJson } from "@/lib/utils";
-import fs from "fs/promises";
-import path from "path";
-import crypto from "crypto";
-
-function generateId(): string {
-  const segments = [];
-  for (let i = 0; i < 5; i++) {
-    segments.push(crypto.randomBytes(3).toString("hex").toUpperCase());
-  }
-  return segments.join("-");
-}
 
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
@@ -42,13 +31,6 @@ export async function GET(req: NextRequest) {
     const buffer = await response.arrayBuffer();
     const contentType = response.headers.get("content-type") || "image/png";
 
-    const resultDir = path.join("/tmp/result/maker/fakedana");
-    await fs.mkdir(resultDir, { recursive: true });
-
-    const id = generateId();
-    const filePath = path.join(resultDir, id);
-    await fs.writeFile(filePath, Buffer.from(buffer));
-
     await incrementStat("total_success");
     await logApiRequest({
       ip_address: userIP,
@@ -58,7 +40,13 @@ export async function GET(req: NextRequest) {
       user_agent: realUA
     });
 
-    return NextResponse.redirect(`/tmp/result/maker/fakedana/${id}`, 302);
+    return new NextResponse(Buffer.from(buffer), {
+      status: 200,
+      headers: {
+        "Content-Type": contentType,
+        "Content-Disposition": `inline; filename="dana-${nominal}.png"`,
+      },
+    });
   } catch (error: any) {
     console.error("Fake Dana API Error:", error);
     await incrementStat("total_errors");
