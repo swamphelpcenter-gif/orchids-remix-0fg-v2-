@@ -754,9 +754,9 @@ export default function DocsPage() {
                           </a>
                       </li>
                         <li className="menu-item">
-                            <a href="/api/downloader/yt?youtube_url=https://youtube.com/watch?v=LMIS2PMqCL0" target="_blank" className="menu-link">
+                            <a href="/api/downloader/youtubev2?yt_url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&type=video target="_blank" className="menu-link">
                                 <div data-i18n="YouTube">YouTube</div>
-                                <div className="badge bg-label-info fs-tiny rounded-pill ms-auto">MP3/MP4</div>
+                                <div className="badge bg-label-info fs-tiny rounded-pill ms-auto">New | V2</div>
                             </a>
                         </li>
                       <li className="menu-item">
