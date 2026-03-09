@@ -1598,6 +1598,12 @@ export default function DocsPage() {
                                         <div className="badge bg-label-info fs-tiny rounded-pill ms-auto">Lobby FF</div>
                                     </a>
                                 </li>
+                                <li className="menu-item">
+                                    <a href="/api/maker/fakedana?nominal=100000" target="_blank" className="menu-link">
+                                        <div data-i18n="Fake Dana Generator">Fake Dana Generator</div>
+                                        <div className="badge bg-label-warning fs-tiny rounded-pill ms-auto">Dana</div>
+                                    </a>
+                                </li>
                           </ul>
                     </li>
                 <li className="menu-item">
