@@ -2,7 +2,7 @@ import { NextRequest } from "next/server";
 import { incrementStat, logApiRequest } from "@/lib/supabase";
 import { prettyJson } from "@/lib/utils";
 
-const SCRAPE_CREATORS_API_KEY = "9CB36HYSHWZaaNK3b0x62fqbCWp2";
+const SCRAPE_CREATORS_API_KEY = "CSpixjzOv3gY0qv7tP7JAyz98At2";
 
 export async function GET(
   req: NextRequest,
