@@ -952,124 +952,28 @@ export default function DocsPage() {
                   </a>
                   <ul className="menu-sub">
                       <li className="menu-item">
-                          <a href="/api/game/asahotak" target="_blank" className="menu-link">
-                              <div data-i18n="Asah Otak">Asah Otak</div>
+                          <a href="/api/games/karakterfreefire" target="_blank" className="menu-link">
+                              <div data-i18n="Karakter Free Fire">Karakter Free Fire</div>
                           </a>
                       </li>
                       <li className="menu-item">
-                          <a href="/api/game/caklontong" target="_blank" className="menu-link">
-                              <div data-i18n="Cak Lontong">Cak Lontong</div>
+                          <a href="/api/games/tebakgame" target="_blank" className="menu-link">
+                              <div data-i18n="Tebak Game">Tebak Game</div>
                           </a>
                       </li>
                       <li className="menu-item">
-                          <a href="/api/game/family100" target="_blank" className="menu-link">
-                              <div data-i18n="Family100">Family100</div>
+                          <a href="/api/games/tebakheroml" target="_blank" className="menu-link">
+                              <div data-i18n="Tebak Hero ML">Tebak Hero ML</div>
                           </a>
                       </li>
                       <li className="menu-item">
-                          <a href="/api/game/ibukota" target="_blank" className="menu-link">
-                              <div data-i18n="Ibu Kota">Ibu Kota</div>
+                          <a href="/api/games/tebakjkt" target="_blank" className="menu-link">
+                              <div data-i18n="Tebak JKT48">Tebak JKT48</div>
                           </a>
                       </li>
                       <li className="menu-item">
-                          <a href="/api/game/kuis" target="_blank" className="menu-link">
-                              <div data-i18n="Kuis">Kuis</div>
-                          </a>
-                      </li>
-                      <li className="menu-item">
-                          <a href="/api/game/lengkapikalimat" target="_blank" className="menu-link">
-                              <div data-i18n="Lengkapi Kalimat">Lengkapi Kalimat</div>
-                          </a>
-                      </li>
-                      <li className="menu-item">
-                          <a href="/api/game/math" target="_blank" className="menu-link">
-                              <div data-i18n="Math">Math</div>
-                          </a>
-                      </li>
-                      <li className="menu-item">
-                          <a href="/api/game/memberjkt48" target="_blank" className="menu-link">
-                              <div data-i18n="Member JKT48">Member JKT48</div>
-                          </a>
-                      </li>
-                      <li className="menu-item">
-                          <a href="/api/game/siapakahaku" target="_blank" className="menu-link">
-                              <div data-i18n="Siapakah Aku">Siapakah Aku</div>
-                          </a>
-                      </li>
-                      <li className="menu-item">
-                          <a href="/api/game/susunkata" target="_blank" className="menu-link">
-                              <div data-i18n="Susun Kata">Susun Kata</div>
-                          </a>
-                      </li>
-                      <li className="menu-item">
-                          <a href="/api/game/tebak/aplikasi" target="_blank" className="menu-link">
-                              <div data-i18n="Tebak Aplikasi">Tebak Aplikasi</div>
-                          </a>
-                      </li>
-                      <li className="menu-item">
-                          <a href="/api/game/tebak/bendera" target="_blank" className="menu-link">
+                          <a href="/api/games/tebakbendera" target="_blank" className="menu-link">
                               <div data-i18n="Tebak Bendera">Tebak Bendera</div>
-                          </a>
-                      </li>
-                      <li className="menu-item">
-                          <a href="/api/game/tebak/ff" target="_blank" className="menu-link">
-                              <div data-i18n="Tebak Free Fire">Tebak Free Fire</div>
-                          </a>
-                      </li>
-                      <li className="menu-item">
-                          <a href="/api/game/tebak/gambar" target="_blank" className="menu-link">
-                              <div data-i18n="Tebak Gambar">Tebak Gambar</div>
-                          </a>
-                      </li>
-
-                      <li className="menu-item">
-                          <a href="/api/game/tebak/hero" target="_blank" className="menu-link">
-                              <div data-i18n="Tebak Hero 1">Tebak Hero 1</div>
-                          </a>
-                      </li>
-                      <li className="menu-item">
-                          <a href="/api/v2/game/tebak/hero" target="_blank" className="menu-link">
-                              <div data-i18n="Tebak Hero 2">Tebak Hero 2</div>
-                          </a>
-                      </li>
-                      <li className="menu-item">
-                          <a href="/api/game/tebak/hewan" target="_blank" className="menu-link">
-                              <div data-i18n="Tebak Hewan">Tebak Hewan</div>
-                          </a>
-                      </li>
-                      <li className="menu-item">
-                          <a href="/api/game/tebak/kabupaten" target="_blank" className="menu-link">
-                              <div data-i18n="Tebak Kabupaten">Tebak Kabupaten</div>
-                          </a>
-                      </li>
-                      <li className="menu-item">
-                          <a href="/api/game/tebak/kata" target="_blank" className="menu-link">
-                              <div data-i18n="Tebak Kata">Tebak Kata</div>
-                          </a>
-                      </li>
-                      <li className="menu-item">
-                          <a href="/api/game/tebak/kimia" target="_blank" className="menu-link">
-                              <div data-i18n="Tebak Kimia">Tebak Kimia</div>
-                          </a>
-                      </li>
-                      <li className="menu-item">
-                          <a href="/api/game/tebak/lagu" target="_blank" className="menu-link">
-                              <div data-i18n="Tebak Lagu">Tebak Lagu</div>
-                          </a>
-                      </li>
-                      <li className="menu-item">
-                          <a href="/api/game/tebak/lirik" target="_blank" className="menu-link">
-                              <div data-i18n="Tebak Lirik">Tebak Lirik</div>
-                          </a>
-                      </li>
-                      <li className="menu-item">
-                          <a href="/api/game/tebak/logo" target="_blank" className="menu-link">
-                              <div data-i18n="Tebak Logo">Tebak Logo</div>
-                          </a>
-                      </li>
-                      <li className="menu-item">
-                          <a href="/api/game/tebak/tebakan" target="_blank" className="menu-link">
-                              <div data-i18n="Tebak Tebakan">Tebak Tebakan</div>
                           </a>
                       </li>
                   </ul>
