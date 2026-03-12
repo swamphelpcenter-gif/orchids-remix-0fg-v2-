@@ -10,21 +10,6 @@ const SUPPORTED_GAMES = [
 
 const BASE_API_URL = 'https://api.fikmydomainsz.xyz/games';
 
-interface ProxyConfig {
-  imageProxy: string;
-  audioProxy: string;
-}
-
-const PROXY_CONFIG: ProxyConfig = {
-  imageProxy: 'https://img.visora.my.id',
-  audioProxy: 'https://audio.visora.my.id',
-};
-
-function transformUrl(url: string, proxyBase: string): string {
-  const encodedUrl = encodeURIComponent(url);
-  return `${proxyBase}/${encodedUrl}`;
-}
-
 function transformResponse(data: any): any {
   if (!data || typeof data !== 'object') {
     return data;
@@ -34,55 +19,6 @@ function transformResponse(data: any): any {
 
   if (transformed.creator === 'FikXzMods') {
     transformed.creator = 'vallzx apis';
-  }
-
-  if (transformed.data && typeof transformed.data === 'object') {
-    const transformedData = { ...transformed.data };
-
-    if (transformedData.gambar) {
-      transformedData.gambar = transformUrl(
-        transformedData.gambar,
-        PROXY_CONFIG.imageProxy
-      );
-    }
-
-    if (transformedData.img) {
-      transformedData.img = transformUrl(
-        transformedData.img,
-        PROXY_CONFIG.imageProxy
-      );
-    }
-
-    if (transformedData.audio) {
-      transformedData.audio = transformUrl(
-        transformedData.audio,
-        PROXY_CONFIG.audioProxy
-      );
-    }
-
-    transformed.data = transformedData;
-  }
-
-  if (transformed.detail && typeof transformed.detail === 'object') {
-    if (transformed.detail.data && typeof transformed.detail.data === 'object') {
-      const detailData = { ...transformed.detail.data };
-
-      if (detailData.img) {
-        detailData.img = transformUrl(
-          detailData.img,
-          PROXY_CONFIG.imageProxy
-        );
-      }
-
-      if (detailData.gambar) {
-        detailData.gambar = transformUrl(
-          detailData.gambar,
-          PROXY_CONFIG.imageProxy
-        );
-      }
-
-      transformed.detail.data = detailData;
-    }
   }
 
   return transformed;
